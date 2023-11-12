@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:acrylic="clr-namespace:Xe.AcrylicView;assembly=Xe.AcrylicView"
              x:Class="FruitDemo.MainPage">
 
     <ContentPage.Background>
@@ -29,6 +30,13 @@
                    Margin="0,15,0,0"
                    FontAttributes="Bold"/>
         </VerticalStackLayout>
+
+        <acrylic:AcrylicView
+            Grid.Row="2"
+            CornerRadius="20"
+            EffectStyle="Custom"
+            TintColor="#fce7a7"
+            TintOpacity=".2"/>
     </Grid>
     
 </ContentPage>
