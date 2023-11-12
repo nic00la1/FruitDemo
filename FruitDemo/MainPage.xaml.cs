@@ -37,8 +37,8 @@ namespace FruitDemo
                     Percentage = 5
                },
           };
-            this.BindingContext = this;
 
+            this.BindingContext = this;
 
         }
     }

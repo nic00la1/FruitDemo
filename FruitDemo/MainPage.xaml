@@ -36,7 +36,26 @@
             CornerRadius="20"
             EffectStyle="Custom"
             TintColor="#fce7a7"
-            TintOpacity=".2"/>
+            TintOpacity=".2">
+
+            <VerticalStackLayout Padding="35" VerticalOptions="Center" BindableLayout.ItemsSource="{Binding PapayaInfo}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,10,0,0" ColumnDefinitions=".6*, .4*">
+                            <Label Text="{Binding Micronutrient}"
+                                   FontFamily="Bold"
+                                   FontSize="20"/>
+                            <Label Text="{Binding Percentage, StringFormat='{0} %'}"
+                                   FontFamily="Regular"
+                                   FontSize="20"
+                                   Grid.Column="1"
+                                   HorizontalTextAlignment="End"/>
+                        </Grid>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+
+        </acrylic:AcrylicView>
     </Grid>
     
 </ContentPage>
